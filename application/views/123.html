@@ -1,0 +1,213 @@
+<div id="main">
+	<h2 style="text-align: center;
+">Registracija za startapove</h2>
+	<div>
+		<center>
+                    <form name="forma" method="post" action="<?php echo site_url('Gost/RegisterUserA');?>"style="width: 50%;
+;">
+			<table style="vertical-align: middle; ">
+                            
+                            <tr>
+                                <td>Username</td>
+                                <td><input type="username" name="username" style="width: 100%"></td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td><input type="password" name="password" style="width: 100%"></td>
+                            </tr>
+				<tr>
+					<td style="width: 50%">Naziv pravnog lica:</td>
+					<td style="width: 50%"><input type="text" name="pravnoLice" style="width: 100%"></td>
+				</tr>
+				<tr>
+					<td>Datum osnivanja: </td>
+					<td><input type="date" name="datumOsn" style="width: 100%"></td>
+				</tr>
+				<tr>
+					<td>Broj registracije: </td>
+					<td><input type="number" name="brReg" style="width: 100%"></td>
+				</tr>
+				<tr>
+					<td>PIB:</td>
+					<td><input type="number" name="pib" style="width: 100%"></td>
+				</tr>
+				<tr>
+					<td>Ime:</td>
+					<td> <input type="text" name="ime" style="width: 100%"></td>
+				</tr>
+				<tr>
+					<td>Prezime: </td>
+					<td><input type="text" name="prezime" style="width: 100%"></td>
+				</tr>
+				<tr>
+					<td>Srednje ime zakonskog zastupnika: </td>
+					<td><input type="text" name="srednjeImeZZ" style="width: 100%"><td/>
+				</tr>
+				<tr>
+					<td>Adresa: </td>
+					<td><input type="text" name="adresa" style="width: 100%"></td>
+				</tr>
+				<tr>
+					<td>Opstina:</td> 
+					<td><input type="text" name="zemlja" style="width: 100%"><!--<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>--></td>
+				</tr>
+				<tr>
+					<td>Grad:</td>
+					<td><input type="text" name="grad" style="width: 100%"> <!--<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>--></td>
+				</tr>
+				<tr>
+					<td>Zemlja:</td>
+					<td><input type="text" name="opstina" style="width: 100%"><!--<select>
+				<option>1</option>
+				<option>1</option>
+				<option>3</option>
+					</select>--></td>
+				</tr>
+				<tr>
+					<td>Kontakt telefon:</td> 
+					<td><input type="number" name="tel" style="width: 100%"></td>
+				</tr>
+				<tr>
+					<td>E-mail:</td> 
+					<td><input type="email" name="email" style="width: 100%"></td>
+				</tr>
+				<tr>
+					<td>Oblasti poslovanja:</td>
+					 <td><input type="text" name="oblPos" style="width: 100%"><!--<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>--></td>
+				</tr>
+				<tr>
+					<td>Broj zaposlenih:</td>
+					<td><input type="number" name="brZaposlenih" style="width: 100%"></td>
+				</tr>
+				<tr>
+					<td>Prihodi u poslednje tri godine:</td> 
+					<td><input type="text" name="prihodi" style="width: 100%"><!--<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>--></td>
+				</tr>
+				<tr>
+					<td>Profit u  poslednje tri godine:</td>
+					<td><input type="text" name="profit" style="width: 100%"> <!--
+						<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>-->
+					</td>
+				</tr>
+				<tr>
+				  <td>Predlog projekta:</td>
+				  <td><textarea name="predPro" rows="6" cols="50">
+				  </textarea></td>
+				</tr>
+
+				<tr>
+				  <td>Trazeni iznos:</td>
+				  <td><input type="number" name="iznos" ></td>
+				</tr>
+
+				<tr>
+				  <td>Status intelektualne svojine:</td>
+				  <td><input type="text" name="statIntS" style="width: 100%"><!--<select>
+					<option></option>
+					<option></option>
+				  </select>--></td>
+				</tr>
+
+				<tr>
+				  <td>Podaci o patentu:</td>
+				  <td><input type="text" name="patent"></td>
+				</tr>
+				<tr>
+					<td>Linkovi ka drustvenim mrezama</td>
+					<td><input type="url" name="facebook" style="width: 100%"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="url" name="twiter" style="width: 100%"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="url" name="linkedin" style="width: 100%"></td>
+				</tr>
+				<tr>
+				  <td>Website</td>
+				  <td><input type="text" name="website"></td>
+				</tr>
+				<tr>
+					<td><input type="submit" name="registracija" value="Registruj se" style="background-color: #476b6b; color: white; width: 100%"></td>
+					<td><input type="reset" name="registracija" value="Resetuj" style="background-color: #476b6b
+;  width: 100%"></td>
+				</tr>
+		</table>
+		</form>
+		</center>
+		</div>
+		
+</div>
+<hr>
+
+<form action="<?php echo site_url('Gost/RegisterUser')?>" method="post">
+				<div class="form-group custom-bottom-margin">
+					<label class="control-label col-sm-4 text-right" for="name">First Name</label>
+					<div class="col-sm-5">
+					  <input type="text" name="first_name" class="form-control" value="<?php echo set_value('first_name'); ?>" placeholder="Enter First name" id="fname">
+					</div>
+				</div>
+				<div class="form-group custom-bottom-margin">
+					<label class="control-label col-sm-4 text-right" for="name">Last Name</label>
+					<div class="col-sm-5">
+					  <input type="text" name="last_name" class="form-control" value="<?php echo set_value('last_name'); ?>" placeholder="Enter Last name" id="lname">
+					</div>
+				</div>
+				<div class="form-group custom-bottom-margin">
+					<label class="control-label col-sm-4 text-right" for="email">Email</label>
+					<div class="col-sm-5">
+					  <input type="email" name="email" class="form-control" value="<?php echo set_value('email');?>" placeholder="Enter email" id="email">
+					</div>
+				</div>
+				<div class="form-group custom-bottom-margin">
+					<label class="control-label col-sm-4 text-right" for="confirm_email">Confirm Email</label>
+					<div class="col-sm-5">
+					  <input type="text"  name="confirm_email" class="form-control" value="<?php echo set_value('confirm_email');?>" placeholder="Confirm email" id="confirm_email">
+					</div>
+				</div>
+				
+				<div class="form-group custom-bottom-margin">
+					<label class="control-label col-sm-4 text-right" for="password">Password</label>
+					<div class="col-sm-5">
+					  <input type="password" name="password" class="form-control" value="<?php echo set_value('password');?>" placeholder="Enter password" id="password">
+					</div>
+				</div>
+				
+				<div class="form-group custom-bottom-margin">
+					<label class="control-label col-sm-4 text-right" for="phone">Phone</label>
+					<div class="col-sm-5">
+					  <input type="text" name="phone" class="form-control" value="<?php echo set_value('phone');?>" placeholder="Enter phone" id="phone">
+					</div>
+				</div>
+				
+				<div class="form-group custom-bottom-margin">
+					<label class="control-label col-sm-4 text-right"></label>
+					<div class="col-sm-5">
+					  <button class="btn btn-primary" type="submit"> Submit</button>
+					</div>
+				</div>
+				
+				
+</form>

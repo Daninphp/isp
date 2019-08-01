@@ -1,0 +1,64 @@
+Dodati dugme "arhiviranje" sa uslovom gde $diskusija['autor'] == $this->session->userdata('oba')->username.
+Na klik "arhiviranje" se menja polje "vidljivost" u bazi na vrednost "5" 
+where "id" = $diskusijaId;
+set ("vrednost", 5; )
+update("diskusije")).
+Kada se promeni vrednost, nije vidljiva na opstem forumu jer ne upada u uslove 1,2,3,4 (Osim adminu, dodati neku vrednost na ispisu da
+se naznaci da je arhivirana diskusija).
+
+Na profilu korisnika se moze dodati opcija "vidi arhivirane postove" gde bi se izlistale
+sve diskusije ciji 
+(($diskusija['autor'] = $this->session->userdata('korisnikst')->username || 
+$diskusija['autor'] = $this->session->userdata('korisnikinv')->username) && vidljivost = 5) echo $diskusija['sadrzaj'].
+Skinu se sva ostala dugmad i dodaci osim same diskusije.
+
+Napraviti u modelu jedan query sa ovim uslovima, posle samo pozvati tu funkciju i uraditi echo rezultata na view-u.
+
+Dodati dugme "Delete" u foreach petlju sa uslovom if($this->session->userdata('admin'))
+echo "<submit>Delete</submit>";
+
+Na profilu dodati dugme "Izmeni profil". Klikom na dugme vodi na stranicu koja iscita sve podatke o korisniku iz baze
+i uradi "update" na kraju query-a u Modelu.
+if($this->session->userdata('korisnikst')) {
+where ("username", $this->session->userdata('startup')->username)
+$result = $this->db->get("korisnikst");
+returnt $result;
+} elseif($this->session->userdata('korisnikinv')) {
+where ("username", $this->session->userdata('startup')->username)
+$result = $this->db->get("korisnikinv ");
+returnt $result;
+}
+
+pitanje: Kako uporediti vrednost iz objekta(username) sa vrednosti iz stringa ($korisnik['username']) na stranici za vidljivost "arhiviraj" dugmeta.
+probati "$korisnik['username']" == ...->username;
+startup- $podaciokorisniku proslediti i diskusijama- resenje.
+(string)($podaciostartupu['username']) = $var
+
+Dodati pozdravnu poruku uz argument grupe na KorisnikSt linija 192.
+
+$podaciokorisniku kada dodje gost na stranicu, koja se vrednost onda daje na mesto gde je sesija za ostale.
+
+dodati tabelu tipovidiskusije
+dodati tip "opste diskusije" kao prvu.
+vaditi samo id, 'tip' diskusije i eventualno datum.
+dodati stranicu tipovidiskusije.php
+
+promeniti a href="";
+kopirati sa diskusije.php, prilagoditi id-tipadiskusije, DODATI TABELI DISKUSIJE polje id_tipa. Za pocetak proslediti vrednost prvog
+id-a,koji ce biti id opstih diskusija.
+
+kako dodati jos jednu ekstenziju za vrstu slike (png,jpeg ...) - KOrisnikSt - linija 424
+
+https://mailtrap.io/pricing  - smtp
+
+
+na diskusije.php
+
+pokrenuti foreach(($petlja koja vadi grupe) as $value)
+ $value['id'] = $petljakojavadikorisnike($value['id'], $usernamekorisnika)
+
+$petljakojavadikorisnike {
+	where....valueID
+	where....$user
+	get->num_rows();
+}
