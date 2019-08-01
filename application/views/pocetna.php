@@ -1,7 +1,9 @@
 <section class="hero">
     <div class="wrapper">
         <div class="welcomeText">
-            <h1>Dobrodosli u ISP</h1>
+
+            <h1>Wellcome - Dobrodosli u ISP</h1>
+
             <p>Ovo je portal namenjen spajanju investitora i startup-ova. Ovde ce ici jos neki tekst o ovom sajtu. Donirajte i spasite mlade naucnike. Zastitomo prirodu.</p>
         </div>
         <div class="rightText">
@@ -53,7 +55,7 @@
                                     <div class="slideShowContent">
                                         <p><?php echo $poslednjadiskusija['sadrzaj'] ?></p>
                                     </div>
-
+                            </li>
                                     <span class="opacity"></span>
                                     <!--<a href="<?php site_url("Gost/prikaziDiskusiju/".$poslednjadiskusija['id'])?>"><?php echo $poslednjadiskusija['naslov'] ?></a> -->
                                     <span class="content">
